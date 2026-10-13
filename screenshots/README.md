@@ -15,4 +15,4 @@ Optional: `04-opensearch-api.png` showing OpenSearch version 3.9.0 without discl
 - Never publish raw PCAP data without checking ownership, authorization and sensitive contents.
 - Do not include the earlier `example.com` HTTP request as proof of an Arkime-indexed HTTP session; the specific flow was not verified in the Viewer.
 
-**Status:** Screenshots pending upload. Documentation is published without embedded images to avoid broken links or fabricated evidence.
+**Status:** All three screenshots have been uploaded and linked from the main README.
