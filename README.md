@@ -81,14 +81,25 @@ See [docs/troubleshooting.md](docs/troubleshooting.md) for commands and observed
 
 ## Evidence
 
-Evidence to include in [screenshots/](screenshots/):
+The screenshots below document the running lab and captured results.
 
-- Arkime Sessions page with the four indexed sessions.
-- Expanded TCP session with packet counts, IP/ports, and MAC OUI.
-- `systemctl status arkimecapture.service` showing `active (running)`.
-- Optional: successful OpenSearch API response (remove tokens/credentials before publication).
+### 1. Captured Network Sessions
 
-The [screenshots guide](screenshots/README.md) explains safe evidence handling. Screenshots are not yet included in this repository.
+Arkime Viewer recorded **226 sessions** in the later validation screenshot, including TCP/HTTP, SSDP and mDNS traffic.
+
+![Arkime Sessions dashboard showing 226 indexed sessions](screenshots/01-arkime-sessions.png)
+
+### 2. Expanded TCP/HTTP Session
+
+The expanded session shows source/destination addressing, ports, protocol identification, packet and byte counts, and VMware MAC manufacturer enrichment. Sensitive HTTP authentication details were hidden before capture.
+
+![Expanded Arkime TCP session metadata](screenshots/02-expanded-tcp-session.png)
+
+### 3. Capture Service Status
+
+The capture daemon remained `active (running)` after the missing OUI file issue was fixed.
+
+![Arkime capture service active and running](screenshots/03-capture-service-running.png)
 
 ## Skills Demonstrated
 
